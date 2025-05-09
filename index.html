@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>N309H - Arabic Oud Shop</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'oud-gold': '#D4AF37',
+            'oud-dark': '#2D2B27',
+            'oud-cream': '#F5F5DC',
+            'oud-brown': '#8B4513',
+          },
+          fontFamily: {
+            'arabic': ['Amiri', 'serif'],
+          },
+          keyframes: {
+            shimmer: {
+              '0%': { backgroundPosition: '-200% 0' },
+              '100%': { backgroundPosition: '200% 0' },
+            }
+          },
+          animation: {
+            shimmer: 'shimmer 3s ease-in-out infinite',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+    .social-icon {
+      transition: all 0.3s ease;
+    }
+
+    .social-icon:hover {
+      transform: translateY(-5px);
+      filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+    }
+
+    .gold-shimmer {
+      background: linear-gradient(90deg, #D4AF37 25%, #FDF5E6 50%, #D4AF37 75%);
+      background-size: 200% 100%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shimmer 6s ease-in-out infinite;
+    }
+  </style>
+</head>
+
+<body class="bg-gradient-to-b from-oud-dark to-black min-h-screen text-oud-cream font-arabic">
+  <div class="container mx-auto px-4 py-8 max-w-4xl">
+    <div class="flex justify-center mb-8">
+      <div
+        class="w-48 h-48 rounded-full bg-oud-cream/10 flex items-center justify-center overflow-hidden border-4 border-oud-gold/50 shadow-xl">
+        <!-- Logo image that fills the parent div -->
+        <img src="logo.jpg" alt="N309H Logo" class="w-full h-full object-cover" />
+      </div>
+    </div>
+
+    <!-- Shop Name & Description -->
+    <div class="text-center mb-12">
+      <h1 class="text-5xl font-bold mb-3 gold-shimmer pb-1">نصر للعود</h1>
+      <p class="text-xl text-oud-cream/80 italic mb-3">العود العربي الأصيل</p>
+      <div class="h-1 w-32 bg-gradient-to-r from-transparent via-oud-gold to-transparent mx-auto"></div>
+    </div>
+
+    <!-- Social Media Links -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+      <!-- WhatsApp Card -->
+      <div
+        class="bg-oud-dark/50 rounded-xl overflow-hidden backdrop-blur-sm border border-oud-gold/20 hover:border-oud-gold/50 transition-all group">
+        <a href="https://wa.me/9058883" class="flex p-6 items-center space-x-4">
+          <div
+            class="w-16 h-16 rounded-full bg-oud-gold/10 flex items-center justify-center social-icon group-hover:bg-oud-gold/20">
+            <i class="fab fa-whatsapp text-3xl text-green-400"></i>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-xl font-semibold mb-1">WhatsApp</h3>
+            <p class="text-oud-cream/60">9058883</p>
+          </div>
+          <div class="text-oud-gold/70 group-hover:text-oud-gold">
+            <i class="fas fa-chevron-right"></i>
+          </div>
+        </a>
+      </div>
+
+      <!-- Snapchat Card -->
+      <div
+        class="bg-oud-dark/50 rounded-xl overflow-hidden backdrop-blur-sm border border-oud-gold/20 hover:border-oud-gold/50 transition-all group">
+        <a href="https://www.snapchat.com/add/N309H" class="flex p-6 items-center space-x-4">
+          <div
+            class="w-16 h-16 rounded-full bg-oud-gold/10 flex items-center justify-center social-icon group-hover:bg-oud-gold/20">
+            <i class="fab fa-snapchat text-3xl text-yellow-300"></i>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-xl font-semibold mb-1">Snapchat</h3>
+            <p class="text-oud-cream/60">N309H</p>
+          </div>
+          <div class="text-oud-gold/70 group-hover:text-oud-gold">
+            <i class="fas fa-chevron-right"></i>
+          </div>
+        </a>
+      </div>
+
+      <!-- Instagram Card -->
+      <div
+        class="bg-oud-dark/50 rounded-xl overflow-hidden backdrop-blur-sm border border-oud-gold/20 hover:border-oud-gold/50 transition-all group">
+        <a href="https://www.instagram.com/N309H_/" class="flex p-6 items-center space-x-4">
+          <div
+            class="w-16 h-16 rounded-full bg-oud-gold/10 flex items-center justify-center social-icon group-hover:bg-oud-gold/20">
+            <i class="fab fa-instagram text-3xl text-pink-500"></i>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-xl font-semibold mb-1">Instagram</h3>
+            <p class="text-oud-cream/60">N309H_</p>
+          </div>
+          <div class="text-oud-gold/70 group-hover:text-oud-gold">
+            <i class="fas fa-chevron-right"></i>
+          </div>
+        </a>
+      </div>
+
+      <!-- Google Maps Card -->
+      <div
+        class="bg-oud-dark/50 rounded-xl overflow-hidden backdrop-blur-sm border border-oud-gold/20 hover:border-oud-gold/50 transition-all group">
+        <a href="https://www.google.com/maps/place/23%C2%B037'15.7%22N+58%C2%B015'37.5%22E/@23.6210136,58.257843,17z/data=!3m1!4b1!4m4!3m3!8m2!3d23.6210136!4d58.2604179?entry=ttu&g_ep=EgoyMDI1MDUwNi4wIKXMDSoASAFQAw%3D%3D"
+          class="flex p-6 items-center space-x-4">
+          <div
+            class="w-16 h-16 rounded-full bg-oud-gold/10 flex items-center justify-center social-icon group-hover:bg-oud-gold/20">
+            <i class="fas fa-map-marker-alt text-3xl text-red-500"></i>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-xl font-semibold mb-1">Visit Us</h3>
+            <p class="text-oud-cream/60">Find our location</p>
+          </div>
+          <div class="text-oud-gold/70 group-hover:text-oud-gold">
+            <i class="fas fa-chevron-right"></i>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Elegant Footer -->
+    <div class="mt-16 border-t border-oud-gold/20 pt-8 text-center">
+      <div class="w-full flex justify-center mb-6">
+        <div class="h-0.5 w-24 bg-gradient-to-r from-transparent via-oud-gold/30 to-transparent"></div>
+      </div>
+      <p class="text-oud-cream/40 mb-2">عش تجربة العود الحقيقية</p>
+      <p class="text-oud-gold/70 text-sm">© 2025 NASER Oud Shop. All rights reserved.</p>
+    </div>
+  </div>
+
+  <script>
+    // Add smooth scroll behavior
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Animation for elements on page load
+    document.addEventListener('DOMContentLoaded', () => {
+      const socialItems = document.querySelectorAll('.grid > div');
+
+      socialItems.forEach((item, index) => {
+        item.style.opacity = '0';
+        item.style.transform = 'translateY(20px)';
+        item.style.transition = 'all 0.5s ease';
+
+        setTimeout(() => {
+          item.style.opacity = '1';
+          item.style.transform = 'translateY(0)';
+        }, 100 * (index + 1));
+      });
+    });
+  </script>
+</body>
+
+</html>
